@@ -1,0 +1,29 @@
+#teams-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centers premier-container */
+    margin-top: 2rem;
+}
+
+#quest{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#teams-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background: #2b2f33;       /* matches your theme better */
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: fit-content;
+    margin-bottom: 8rem;
+}
+
+#teams-img {
+    width: 20vw;
+    border-radius: 8px;
+    background: #2b2f33;
+}

@@ -1,0 +1,38 @@
+/* Navigation.css - nav list + links */
+
+#main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* horizontal list */
+#nav-list{
+  list-style: none;
+  display: flex;
+  gap: 2rem;                  /* more separation between items */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Links */
+.my-link{
+  text-decoration: none;      /* remove underline */
+  color: #e8eef2;             /* slightly off-white */
+  font-size: 18px;            /* larger text like screenshot */
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: color .12s ease, transform .08s ease;
+  padding: 4px 0;
+}
+
+/* hover + active */
+.my-link:hover{
+  color: #fff;
+  transform: translateY(-1px);
+}
+.my-link.active,
+.my-link:active {
+  color: #ffffff;
+  font-weight: 700;           /* bold active */
+}

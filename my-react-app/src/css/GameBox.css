@@ -1,0 +1,10 @@
+.game-box{
+    background: #2b2f33;              /* dark gray like screenshot */
+    width: 100%;                      /* fill parent width */
+    height: 6rem;              /* gives visible size */
+    border-radius: 10px;              /* rounded corners */
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 1rem;
+    margin: 1rem 0;                   /* spacing between boxes */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25); /* subtle shadow */
+}

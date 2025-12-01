@@ -1,0 +1,13 @@
+#location{
+    margin-top: 1rem;
+    margin-left: 8rem;
+    color: #e9eef2;
+}
+
+#premier-league-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;                     /* center entire content */
+    padding-top: 2rem;
+}
