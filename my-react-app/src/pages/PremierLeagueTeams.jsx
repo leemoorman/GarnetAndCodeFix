@@ -11,11 +11,11 @@ const PremierLeagueTeams = () => {
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/bournemouth.vresize.72.72.medium.0.png" name="Bournemouth"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/brentford.vresize.72.72.medium.0.png" name="Brentford"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/brighton-hove-albion.vresize.72.72.medium.0.png" name="Brighton & Hove Albion"/>
+                <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/burnley.vresize.72.72.medium.0.png" name="Burnley"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/chelsea.vresize.72.72.medium.0.png" name="Chelsea"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/crystal-palace.vresize.72.72.medium.0.png" name="Crystal Palace"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/everton.vresize.72.72.medium.0.png" name="Everton"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/leeds-united.vresize.72.72.medium.0.png" name="Leeds United"/>
-                <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/leicester-city.vresize.72.72.medium.0.png" name="Leicester City"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/liverpool.vresize.72.72.medium.0.png" name="Liverpool"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/manchester-city.vresize.72.72.medium.0.png" name="Manchester City"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/manchester-united.vresize.72.72.medium.0.png" name="Manchester United"/>
