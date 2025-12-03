@@ -1,10 +1,59 @@
-.game-box{
-    background: #2b2f33;              /* dark gray like screenshot */
-    width: 100%;                      /* fill parent width */
-    height: 6rem;              /* gives visible size */
-    border-radius: 10px;              /* rounded corners */
+/* game box container */
+.game-box {
+    background: #2b2f33;
+    width: 100%;
+    height: 5.5rem;
+    border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.08);
-    padding: 1rem;
-    margin: 1rem 0;                   /* spacing between boxes */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25); /* subtle shadow */
+    padding: 0 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+/* team containters */
+.team {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    background: none;
+}
+
+/* logo */
+.team-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: #1f2933;
+    padding: 4px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* team name */
+.team-name {
+    font-size: 2.0rem;
+    font-weight: 600;
+    white-space: nowrap;
+    background: none;
+}
+
+.team-home {
+    justify-content: flex-start;
+}
+
+.team-away {
+    justify-content: flex-end;
+}
+/* vs in the middle of box */
+.vs {
+    width: 60px;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 2rem;
+    background: none;
 }
