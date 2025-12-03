@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     color: #ffffff;
+    cursor: pointer;  /* so the box looks like u can click it */
 }
 
 /* team containters */
@@ -45,7 +46,6 @@
 .team-home {
     justify-content: flex-start;
 }
-
 .team-away {
     justify-content: flex-end;
 }
