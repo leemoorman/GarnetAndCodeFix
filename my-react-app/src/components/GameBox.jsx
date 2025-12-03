@@ -1,13 +1,41 @@
 import './../css/GameBox.css';
-import pic from '../assets/premierleague.png';   // placeholder for pics until they are uploaded into the assets folder
+import { useNavigate } from 'react-router-dom';
+import teamLogos from '../assets/teamLogo';
 
 const GameBox = ({ homeTeam, awayTeam }) => {
-  return (
-    <div className="game-box">
+  const navigate = useNavigate();
 
+  const handleClick = () => {
+    navigate('/matches/premier-league/match', {
+      state: {
+        homeTeam,
+        awayTeam,
+      },
+    });
+  };
+
+  const homeLogo = teamLogos[homeTeam];
+  const awayLogo = teamLogos[awayTeam];
+
+  return (
+    <div
+      className="game-box"
+      onClick={handleClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') handleClick();
+      }}
+    >
       {/* Home team */}
       <div className="team team-home">
-        <img src={pic} alt="Home Team Logo" className="team-logo" />
+        {homeLogo && (
+          <img
+            src={homeLogo}
+            alt={`${homeTeam} logo`}
+            className="team-logo"
+          />
+        )}
         <span className="team-name">{homeTeam}</span>
       </div>
 
@@ -17,9 +45,14 @@ const GameBox = ({ homeTeam, awayTeam }) => {
       {/* Away team */}
       <div className="team team-away">
         <span className="team-name">{awayTeam}</span>
-        <img src={pic} alt="Away Team Logo" className="team-logo" />
+        {awayLogo && (
+          <img
+            src={awayLogo}
+            alt={`${awayTeam} logo`}
+            className="team-logo"
+          />
+        )}
       </div>
-
     </div>
   );
 };
