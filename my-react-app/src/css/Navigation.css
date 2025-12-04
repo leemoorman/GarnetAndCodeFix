@@ -36,3 +36,9 @@
   color: #ffffff;
   font-weight: 700;           /* bold active */
 }
+
+.logout-link {
+  color: #ff6b6b;
+  font-weight: 700;
+  margin-left: auto;          /*push to the far right */
+}

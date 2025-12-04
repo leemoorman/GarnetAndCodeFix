@@ -29,6 +29,8 @@ import TottenhamHome from './teampages/TottenhamHome';
 import WestHamHome from './teampages/WestHamHome';
 import WolverhamptonHome from './teampages/WolverhamptonHome';
 import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+
 
 
 const App = () =>{
@@ -36,6 +38,7 @@ const App = () =>{
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
 
         <Route path="/" element={<Layout />}>
           <Route path="home" element={<Home />} />

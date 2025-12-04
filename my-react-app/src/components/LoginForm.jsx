@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/LoginForm.css';
 
 const LoginForm = ({ formType, onSubmit }) => {
@@ -42,7 +43,7 @@ const LoginForm = ({ formType, onSubmit }) => {
 
         {formType === 'login' && (
           <p className="signup-link">
-            No Account? <strong>Sign Up Here</strong>
+            No Account? <strong><Link to="/signup">Sign Up Here</Link></strong>
           </p>
         )}
       </form>
