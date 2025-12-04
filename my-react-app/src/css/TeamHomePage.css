@@ -1,0 +1,13 @@
+.team-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.team-info img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-right: 1.5rem;
+}

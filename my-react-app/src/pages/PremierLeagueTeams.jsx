@@ -1,4 +1,5 @@
 import Team from '../components/Team.jsx';
+import '../css/PremierLeagueTeams.css';
 
 const PremierLeagueTeams = () => {
     return (

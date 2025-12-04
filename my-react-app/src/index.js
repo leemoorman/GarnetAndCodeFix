@@ -9,6 +9,7 @@ import Predictions from './pages/Predictions';
 import Settings from './pages/Settings';
 import PremierLeagueMatches from './pages/PremierLeagueMatches';
 import PremierLeagueTeams from './pages/PremierLeagueTeams';
+import ArsenalHome from './teampages/ArsenalHome';
 
 const App = () =>{
   return(
@@ -22,6 +23,7 @@ const App = () =>{
           <Route path="/settings" element={<Settings />} />
           <Route path="/matches/premier-league" element={<PremierLeagueMatches />} />
           <Route path="/teams/premier-league" element={<PremierLeagueTeams />} />
+          <Route path="/teams/premier-league/arsenal" element={<ArsenalHome />} />
         </Route>
       </Routes>
     </BrowserRouter>

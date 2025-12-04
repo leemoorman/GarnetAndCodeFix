@@ -1,15 +1,20 @@
-#premier-league-teams-content{
-  display: flex;
-  flex-direction: row; /* stack title + section vertically */
-  align-items: center;
-  padding: 2rem;
+#premier-league-teams-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
-/* the row container that holds all team cards */
-#premier-league-teams-section{
+.team {
+    width: calc(20% - 1rem);   /* exactly 5 per row */
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;  /* centers premier-container */
-    margin-top: 2rem;    /* optional: align with page padding */
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.team img {
+    width: 110px;      /* increase image size */
+    height: 110px;
+    object-fit: contain;
 }

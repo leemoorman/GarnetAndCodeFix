@@ -1,4 +1,5 @@
 #team-container {
+    width: calc(20% - 1rem);
     background: #2b2f33;
     border-radius: 12px;
     padding: 1rem;
@@ -8,12 +9,19 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
     color: #e9eef2;
     box-sizing: border-box;
-
+    flex-direction: column;
+    margin-top: 2rem;
+    text-decoration: none;
 }
 
 #team-img {
-    width: 48px;
-    height: 48px;
+    width: 110px;      /* increase image size */
+    height: 110px;
     object-fit: contain;
     display: block; 
 }
+
+#team-container p{
+    background: #2b2f33;
+}
+
