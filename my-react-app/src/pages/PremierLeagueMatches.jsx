@@ -17,7 +17,6 @@ const PremierLeagueMatches = () => {
                 const header = lines[0].split(',');
                 const idxHome = header.indexOf('HomeTeam');
                 const idxAway = header.indexOf('AwayTeam');
-
                 const parsed = lines.slice(1).map((line, i) => {
                     const cols = line.split(',');
 
@@ -34,7 +33,6 @@ const PremierLeagueMatches = () => {
     return (
         <main>
             <h3 id="location">Soccer / Matches / Premier League</h3>
-
             <div id="premier-league-content">
                 <h2>Matches</h2>
                 {matches.map(match => (
