@@ -49,28 +49,33 @@
     margin-bottom: 1.25rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #2b2f33;
+    background: #2b2f33;
 }
 
 .team-section {
     flex: 1;
     text-align: center;
     padding: 0.5rem;
+    background: #2b2f33;
 }
 
 .home .team-name {
     color: #4fc3f7;
     font-weight: 600;
     font-size: 1.1rem;
+    background: #2b2f33;
 }
 
 .away .team-name {
     color: #ff8a65;
     font-weight: 600;
     font-size: 1.1rem;
+    background: #2b2f33;
 }
 
 .match-divider {
     margin: 0 1rem;
+    background: #2b2f33;
 }
 
 .vs {
@@ -80,6 +85,7 @@
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
+    background: #2b2f33;
 }
 
 /* Prediction Summary */
@@ -106,6 +112,7 @@
 
 .prediction-text {
     flex: 1;
+    background: #2b2f33;
 }
 
 .prediction-outcome {
@@ -113,16 +120,19 @@
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 0.25rem;
+    background: #2b2f33;
 }
 
 .confidence-indicator {
     font-size: 0.8rem;
     font-weight: 500;
+    background: #2b2f33;
 }
 
 /* Probability Display */
 .probability-display {
     margin-bottom: 0.5rem;
+    background: #2b2f33;
 }
 
 .probability-row {
@@ -138,16 +148,27 @@
     justify-content: space-between;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
+    background: #2b2f33;
 }
 
 .team-label {
     color: #b0b7c3;
     font-weight: 500;
+    background: #2b2f33;
+}
+
+.team-logo{
+    background: #2b2f33;
+}
+
+.team-logo-container{
+    background: #2b2f33;
 }
 
 .prob-value {
     color: #ffffff;
     font-weight: 600;
+    background: #2b2f33;
 }
 
 .probability-bar {
@@ -218,10 +239,11 @@
     margin-top: 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
+    background: #2b2f33;
 }
 
 .stat-badge {
-    background: #2b2f33;
+    background: #0A141C;
     color: #b0b7c3;
     padding: 0.2rem 0.5rem;
     border-radius: 12px;
