@@ -18,7 +18,8 @@
     width: 110px;      /* increase image size */
     height: 110px;
     object-fit: contain;
-    display: block; 
+    display: block;
+    background: #2b2f33;
 }
 
 #team-container p{

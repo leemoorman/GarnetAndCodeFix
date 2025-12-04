@@ -11,7 +11,7 @@ const PremierLeagueTeams = () => {
                 <Team img="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aston_Villa_FC_new_crest.svg/250px-Aston_Villa_FC_new_crest.svg.png" name="Aston Villa"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/bournemouth.vresize.72.72.medium.0.png" name="Bournemouth"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/brentford.vresize.72.72.medium.0.png" name="Brentford"/>
-                <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/brighton-hove-albion.vresize.72.72.medium.0.png" name="Brighton & Hove Albion"/>
+                <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/brighton-hove-albion.vresize.72.72.medium.0.png" name="Brighton Hove Albion"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/burnley.vresize.72.72.medium.0.png" name="Burnley"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/chelsea.vresize.72.72.medium.0.png" name="Chelsea"/>
                 <Team img="https://b.fssta.com/uploads/application/soccer/team-logos/crystal-palace.vresize.72.72.medium.0.png" name="Crystal Palace"/>

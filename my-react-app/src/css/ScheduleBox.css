@@ -1,0 +1,10 @@
+.schedule-box{
+    background: #2b2f33;              
+    width: 35vw;                      
+    min-height: 140px;                
+    border-radius: 10px;              
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 1rem;
+    margin: 1rem 0;                   
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}

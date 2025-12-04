@@ -2,13 +2,13 @@ import '../css/TeamHomePage.css';
 import ScheduleBox from '../components/ScheduleBox';
 import RecentBox from '../components/RecentBox';
 import RosterBox from '../components/RosterBox';
-import TeamInfo from '../components/TeamInfo'; 
+import TeamInfo from '../components/TeamInfo';
 
-const ArsenalHome = () => {
+const BrightonHoveAlbionHome = () => {
     return(
         <div>
-            <h3 id="location">Soccer / Teams / Premier League / Arsenal</h3>
-            <TeamInfo img="https://upload.wikimedia.org/wikipedia/hif/8/82/Arsenal_FC.png" name="Arsenal"/>
+            <h3 id="location">Soccer / Teams / Premier League / Brighton & Hove Albion</h3>
+            <TeamInfo img="https://b.fssta.com/uploads/application/soccer/team-logos/brighton-hove-albion.vresize.72.72.medium.0.png" name="Brighton Hove Albion"/>
             <div className="team-content">
                 <section>
                     <h2>Roster</h2>
@@ -25,4 +25,4 @@ const ArsenalHome = () => {
     );
 };
 
-export default ArsenalHome;
+export default BrightonHoveAlbionHome;

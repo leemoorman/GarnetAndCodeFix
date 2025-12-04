@@ -4,11 +4,11 @@ import RecentBox from '../components/RecentBox';
 import RosterBox from '../components/RosterBox';
 import TeamInfo from '../components/TeamInfo'; 
 
-const ArsenalHome = () => {
+const ChelseaHome = () => {
     return(
         <div>
-            <h3 id="location">Soccer / Teams / Premier League / Arsenal</h3>
-            <TeamInfo img="https://upload.wikimedia.org/wikipedia/hif/8/82/Arsenal_FC.png" name="Arsenal"/>
+            <h3 id="location">Soccer / Teams / Premier League / Chelsea</h3>
+            <TeamInfo img="https://b.fssta.com/uploads/application/soccer/team-logos/chelsea.vresize.72.72.medium.0.png" name="Chelsea"/>
             <div className="team-content">
                 <section>
                     <h2>Roster</h2>
@@ -25,4 +25,4 @@ const ArsenalHome = () => {
     );
 };
 
-export default ArsenalHome;
+export default ChelseaHome;

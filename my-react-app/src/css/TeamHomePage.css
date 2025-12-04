@@ -11,3 +11,17 @@
     object-fit: contain;
     margin-right: 1.5rem;
 }
+
+.team-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.team-right-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
