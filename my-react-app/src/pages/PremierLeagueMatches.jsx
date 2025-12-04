@@ -4,6 +4,7 @@ import '../css/PremierLeagueMatches.css';
 
 const PremierLeagueMatches = () => {
   const [matches, setMatches] = useState([]);
+  const [predictions, setPredictions] = useState({});
 
   useEffect(() => {
     // load the fixtures.csv file
@@ -29,6 +30,16 @@ const PremierLeagueMatches = () => {
         setMatches(matchList);
       });
   }, []);
+
+  const handlePredictionChange = (matchId, prediction) => {
+    setPredictions((prev) => ({ ...prev, [matchId]: prediction }));
+  };
+
+  const handleSubmitPredictions = () => {
+    console.log('User Predictions:', predictions);
+    alert('Predictions submitted!');
+  };
+
   return (
     <main>
       <h3 id="location">Soccer / Matches / Premier League</h3>
@@ -36,12 +47,23 @@ const PremierLeagueMatches = () => {
       <div id="premier-league-content">
         <h2>Matches</h2>
         {matches.map((match) => (
-          <GameBox
-            key={match.id}
-            homeTeam={match.homeTeam}
-            awayTeam={match.awayTeam}
-          />
+          <div key={match.id} className="match-container">
+            <GameBox homeTeam={match.homeTeam} awayTeam={match.awayTeam} />
+            <div className="prediction-input">
+              <label htmlFor={`prediction-${match.id}`}>Your Prediction:</label>
+              <input
+                id={`prediction-${match.id}`}
+                type="text"
+                placeholder="e.g., Home Win, Away Win, Draw"
+                value={predictions[match.id] || ''}
+                onChange={(e) => handlePredictionChange(match.id, e.target.value)}
+              />
+            </div>
+          </div>
         ))}
+        <button className="submit-button" onClick={handleSubmitPredictions}>
+          Submit Predictions
+        </button>
       </div>
     </main>
   );
