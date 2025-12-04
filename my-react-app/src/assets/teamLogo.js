@@ -1,6 +1,4 @@
 // premier league team logos
-// src/data/teamLogos.js
-
 const teamLogos = {
     "Arsenal FC":
       "https://upload.wikimedia.org/wikipedia/hif/8/82/Arsenal_FC.png",
