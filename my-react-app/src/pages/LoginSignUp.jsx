@@ -11,11 +11,7 @@ const LoginSignUp = () => {
 
     return (
         <main id="login-signup-content">
-            <h2 className='title-text'>Login</h2>
             <LoginSignUpForm formType="login" onSubmit={handleLogin} />
-
-            <h2 className='title-text'>Sign Up</h2>
-            <LoginSignUpForm formType="signup" onSubmit={handleLogin} />
         </main>
     );
 };
