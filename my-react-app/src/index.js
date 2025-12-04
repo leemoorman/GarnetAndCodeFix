@@ -28,14 +28,15 @@ import SunderlandHome from './teampages/SunderlandHome';
 import TottenhamHome from './teampages/TottenhamHome';
 import WestHamHome from './teampages/WestHamHome';
 import WolverhamptonHome from './teampages/WolverhamptonHome';
-import LoginSignUp from './pages/LoginSignUp';
+import Login from './pages/Login';
 
 
 const App = () =>{
   return(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<LoginSignUp />} />
+        <Route path="/" element={<Login />} />
+
         <Route path="/" element={<Layout />}>
           <Route path="home" element={<Home />} />
           <Route path="matches" element={<MatchesLeague />} />
