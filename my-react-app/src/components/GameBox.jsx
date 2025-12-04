@@ -4,7 +4,6 @@ import teamLogos from '../assets/teamLogo';
 
 const GameBox = ({ homeTeam, awayTeam }) => {
   const navigate = useNavigate();
-
   const handleClick = () => {
     navigate('/matches/premier-league/match', {
       state: {
@@ -13,10 +12,8 @@ const GameBox = ({ homeTeam, awayTeam }) => {
       },
     });
   };
-
   const homeLogo = teamLogos[homeTeam];
   const awayLogo = teamLogos[awayTeam];
-
   return (
     <div
       className="game-box"
@@ -38,10 +35,8 @@ const GameBox = ({ homeTeam, awayTeam }) => {
         )}
         <span className="team-name">{homeTeam}</span>
       </div>
-
       {/* Center VS text */}
       <div className="vs">vs</div>
-
       {/* Away team */}
       <div className="team team-away">
         <span className="team-name">{awayTeam}</span>
@@ -56,5 +51,4 @@ const GameBox = ({ homeTeam, awayTeam }) => {
     </div>
   );
 };
-
 export default GameBox;

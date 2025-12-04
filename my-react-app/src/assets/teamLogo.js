@@ -1,12 +1,10 @@
 // premier league team logos
-// src/data/teamLogos.js
-
 const teamLogos = {
     "Arsenal FC":
-      "https://upload.wikimedia.org/wikipedia/hif/8/82/Arsenal_FC.png",
+      "https://b.fssta.com/uploads/application/soccer/team-logos/arsenal.vresize.72.72.medium.0.png",
   
     "Aston Villa FC":
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aston_Villa_FC_new_crest.svg/250px-Aston_Villa_FC_new_crest.svg.png",
+      "https://b.fssta.com/uploads/application/soccer/team-logos/aston-villa.vresize.72.72.medium.0.png",
   
     "AFC Bournemouth":
       "https://b.fssta.com/uploads/application/soccer/team-logos/bournemouth.vresize.72.72.medium.0.png",

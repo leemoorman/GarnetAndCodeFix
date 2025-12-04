@@ -1,0 +1,12 @@
+#loginSignUp-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.loginSignUp-text {
+    color: #e9eef2;
+    font-size: 1.8rem;
+    margin: 0;
+}
