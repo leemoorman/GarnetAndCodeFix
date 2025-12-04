@@ -1,0 +1,267 @@
+#location {
+    margin-top: 1rem;
+    margin-left: 8rem;
+    color: #e9eef2;
+}
+
+#predictions-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+#predictions-content h2 {
+    color: #e9eef2;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.predictions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Prediction Box */
+.prediction-box {
+    background: #2b2f33;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #2b2f33;
+}
+
+.prediction-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Match Teams */
+.match-teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #2b2f33;
+}
+
+.team-section {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.home .team-name {
+    color: #4fc3f7;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.away .team-name {
+    color: #ff8a65;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.match-divider {
+    margin: 0 1rem;
+}
+
+.vs {
+    background: #2b2f33;
+    color: #b0b7c3;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Prediction Summary */
+.prediction-summary {
+    display: flex;
+    align-items: center;
+    background: #2b2f33;
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.prediction-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0A141C;
+    border-radius: 50%;
+}
+
+.prediction-text {
+    flex: 1;
+}
+
+.prediction-outcome {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.confidence-indicator {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Probability Display */
+.probability-display {
+    margin-bottom: 0.5rem;
+}
+
+.probability-row {
+    margin-bottom: 1rem;
+}
+
+.probability-row:last-child {
+    margin-bottom: 0;
+}
+
+.team-probability {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.team-label {
+    color: #b0b7c3;
+    font-weight: 500;
+}
+
+.prob-value {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.probability-bar {
+    height: 8px;
+    background-color: #3a3f58;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.probability-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.home-fill {
+    background: linear-gradient(90deg, #29b6f6, #4fc3f7);
+}
+
+.away-fill {
+    background: linear-gradient(90deg, #ff7043, #ff8a65);
+}
+
+/* Loading State */
+.loading-container {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.loading-spinner {
+    border: 4px solid #3a3f58;
+    border-top: 4px solid #4fc3f7;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+    color: #b0b7c3;
+}
+
+.no-predictions {
+    text-align: center;
+    padding: 3rem;
+    background: #2b2f33;
+    border-radius: 8px;
+    color: #b0b7c3;
+    grid-column: 1 / -1;
+}
+
+.predictions-subtitle {
+    color: #b0b7c3;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.team-stats {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stat-badge {
+    background: #2b2f33;
+    color: #b0b7c3;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.draw-fill {
+    background: linear-gradient(90deg, #9e9e9e, #bdbdbd);
+}
+
+/* Update probability bars for three outcomes */
+.probability-row {
+    margin-bottom: 0.75rem;
+}
+
+.probability-row:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #predictions-content {
+        width: 90%;
+    }
+    
+    .predictions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .match-teams {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .match-divider {
+        margin: 0.5rem 0;
+    }
+    
+    .team-section {
+        width: 100%;
+    }
+}
