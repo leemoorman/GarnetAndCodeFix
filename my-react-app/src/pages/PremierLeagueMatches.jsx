@@ -57,11 +57,12 @@ const PremierLeagueMatches = () => {
                 placeholder="e.g., Home Win, Away Win, Draw"
                 value={predictions[match.id] || ''}
                 onChange={(e) => handlePredictionChange(match.id, e.target.value)}
+                className='input-bar'
               />
             </div>
           </div>
         ))}
-        <button className="submit-button" onClick={handleSubmitPredictions}>
+        <button id="submit-button" onClick={handleSubmitPredictions}>
           Submit Predictions
         </button>
       </div>
